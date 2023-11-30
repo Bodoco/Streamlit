@@ -3,22 +3,13 @@
 '''
 # Importando as bibliotecas
 import streamlit as st
-import pandas as pd
-import plotly.graph_objects as go
-import plotly.express as px
 import yfinance as yf
 
-# Importando os dados
-#amazon= yf.download('AMZO34.SA',start='2022-01-01',end='2023-11-20') # Ações da carteira do Benas
-#amazon.head()
-#petrobras= yf.download('PETR4.SA',start='2022-01-01',end='2023-11-20') # Ações da carteira do Benas
-#embraer= yf.download('EMBR3.SA',start='2022-01-01',end='2023-11-20') # Ações da carteira do Benas
-#magalu= yf.download('MGLU3.SA',start='2022-01-01',end='2023-11-20') # Ações da carteira do Bena
-#apple= yf.download('AAPL34.SA',start='2022-01-01',end='2023-11-20') # Ações da carteira do Benas
-#tesla= yf.download('TSLA34.SA',start='2022-01-01',end='2023-11-20') # Ações da carteira do Benas
-
-
-
+# Título
+st.title('Carteira do Benas')
+ 
+# Introdução
+st.write('Este é um dashboard em Streamlit para análise da carteira de ações do Benas,um investidor que tem 6 ações em sua carteira e quer aloca-las da melhor forma possível.')
 
 # Lista de ações para escolher
 acoes = ['AMZO34.SA', 'PETR4.SA', 'EMBR3.SA', 'MGLU3.SA', 'AAPL34.SA', 'TSLA34.SA']
@@ -46,7 +37,6 @@ plt.ylabel('Retorno')
 st.pyplot(plt)
 
 #Agora vamos criarr o dashboard da carteira do Benas
-import matplotlib.pyplot as plt
 
 # Supondo que a carteira do Benas seja um dicionário com o nome do investimento e o valor investido
 carteira_benas = {'PETR4.SA': 10000, 'AMAZO34.SA': 10000, 'MGLU3.SA': 20000, 'AAPL34.SA': 20000, 'TSLA34.SA': 15000, 'EMBR3.SA': 15000}
